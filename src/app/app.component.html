@@ -1,0 +1,29 @@
+<div class="container">
+  <nav class="genre-nav">
+    <button
+      *ngFor="let genre of genres$ | async"
+      (click)="handleGenreSelection(genre.description)"
+      [ngClass]="
+        genre.description === genreSelected
+          ? 'genre-button-selected'
+          : 'genre-button'
+      "
+    >
+      {{ genre.description }}
+    </button>
+  </nav>
+
+  <main class="movies-main">
+    <div *ngIf="movies.length > 0; else elseBlock">
+      <card-movie-component *ngFor="let movie of movies" [movie]="movie">
+      </card-movie-component>
+    </div>
+    <ng-template #elseBlock
+      ><div class="empty">
+        <span class="empty-span"> Select a genre to show the movies </span>
+      </div></ng-template
+    >
+  </main>
+
+  <router-outlet></router-outlet>
+</div>

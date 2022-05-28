@@ -1,0 +1,58 @@
+<div class="container">
+  <img
+    height="400px"
+    class="movie-image"
+    [src]="movie?.posterUrl"
+    [alt]="movie?.title"
+    onerror="this.src = 'data:image/png;base64,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'"
+  />
+
+  <div class="movie-content">
+    <h1 class="movie-title">{{ movie?.title }}</h1>
+    <p class="movie-info">{{ movie?.year }}, {{ movie?.director }}</p>
+
+    <span
+      *ngFor="let genre of movie?.genres; let i = index"
+      class="movie-info-secondary"
+    >
+      <span
+        *ngIf="(movie?.genres)!.length === i + 1; else elseBlock"
+        class="movie-info-secondary"
+        >{{ genre.description }}</span
+      >
+      <ng-template #elseBlock class="movie-info-secondary"
+        >{{ genre.description }},
+      </ng-template>
+    </span>
+
+    <p class="movie-info">{{ movie?.actors }}</p>
+
+    <div
+      *ngIf="collapseDescription; else elseBlock"
+      class="movie-info-secondary"
+    >
+      <span>
+        {{ movie?.plot }}
+      </span>
+
+      <div>
+        <button
+          (click)="handleCollapseDescription()"
+          class="description-button"
+        >
+          see less description
+        </button>
+      </div>
+    </div>
+    <ng-template #elseBlock class="movie-info-secondary"
+      ><div>
+        <button
+          (click)="handleCollapseDescription()"
+          class="description-button"
+        >
+          see full description
+        </button>
+      </div>
+    </ng-template>
+  </div>
+</div>

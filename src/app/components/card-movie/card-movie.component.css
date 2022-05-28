@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 19px -5px #000000;
+}
+
+.movie-image {
+  border-radius: 8px 0 0 8px;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.movie-title {
+  color: #00221d;
+}
+
+.movie-genre {
+  display: flex;
+}
+.movie-info {
+  color: #00221d;
+}
+
+.movie-info-secondary {
+  color: #5746af;
+}
+
+.description-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #00221d;
+  font-size: 14px;
+  font-weight: bold;
+}
