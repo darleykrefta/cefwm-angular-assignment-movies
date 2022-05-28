@@ -1,3 +1,7 @@
+# cefwm-angular-assignment-movies
+
+Angular class home assignment 2
+
 # Web
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
